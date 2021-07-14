@@ -1,0 +1,869 @@
+/*
+================================
+        public styles 
+================================
+*/
+
+
+* , *:after ,  *:before
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+font-family: Tahoma , Arial ;
+height: auto;
+}
+
+.container
+{
+    width: 85%;  
+    /* when you make your web Disigen by prisenteg this well get your web in media Quary */
+    margin: auto;
+    /* background-color: green; */
+}
+
+/*
+================================
+        navbar styles 
+================================
+*/
+.navbar
+{
+    padding: 20px 0px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;  
+    border-bottom: 1px solid black;
+}
+
+.navbar .logo
+{
+    width: 50%;
+    float: left;
+}
+
+.navbar .logo .logo-text
+{
+    font-size: 30px;
+}
+
+.navbar input  ,  .navbar label
+{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.navbar input
+{
+    display: none;
+}
+
+.navbar label
+{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/navbar/open.png);
+    background-size: cover;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navbar input:checked ~ .ul-list
+{
+    display: block;
+}
+
+.navbar input:checked ~ label
+{
+    display: block;
+    width:15px;
+    height:15px;
+    background-image: url(../images/navbar/close.png);
+    background-size: cover;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.navbar .ul-list
+{
+    width: 50%;
+    float: left;
+    list-style: none;    
+}
+
+.navbar .ul-list .list-item
+{
+    display: inline-block;
+}
+
+.navbar .ul-list .list-item a
+{
+    display: block;
+    /* background-color: green; */
+    color: #222;
+    text-decoration: none; 
+    padding: 10px 15px;
+}
+
+.navbar .ul-list .list-item a:hover
+{
+    color: brown;
+}
+
+/* media for navbar style */
+@media(max-width:1268px)
+{
+
+        .navbar .logo
+        {
+            width: 100%;
+            float: none;
+        } 
+
+        .navbar .ul-list
+        {
+            width: 100%;
+            float: none;
+            display: none;
+        }
+    
+        .navbar .ul-list .list-item
+        {
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        .navbar .ul-list .list-item a:hover
+        {
+            color: wheat;
+            background-color: black;
+            transition: 2s all ease-in;
+            -webkit-transition: 2s all ease-in;
+            -moz-transition: 2s all ease-in;
+            -ms-transition: 2s all ease-in;
+            -o-transition: 2s all ease-in;
+}
+
+}
+
+@media(min-width:992px)
+{
+    .navbar label
+    {
+        display: none;
+    }
+}
+
+
+/*
+================================
+        Home styles 
+================================
+*/
+.Home
+{
+    height: 500px;
+    /* width: 100%; */
+    background-image: url(../images/home/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.home-information
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%  -50%) ;
+    -webkit-transform:translate(-50% , -50%) ;
+    -moz-transform:translate(-50% , -50%) ;
+    -ms-transform:translate(-50% , -50%) ;
+    -o-transform:translate(-50% , -50%) ;
+}
+
+.home-titel
+{
+    font-size: 40px;
+    font-weight: bold;
+    color:#5e5e5e;
+    margin-bottom: 20px;
+
+}
+
+.home-info
+{
+    font-size: 35px;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.home-describiton
+{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.fe-span
+{
+    color: black;
+}
+
+.home-btn
+{
+    background-color: #eb5424;
+    color: wheat;
+    font-size: 18px;
+    width:150px ;
+    border: 0;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.home-btn:hover
+{
+    background-color:white;
+    color: #eb5424 ;
+}
+
+@media(max-width:768px)
+{
+    .home-titel
+    {
+        font-size: 30px;
+        color: black;
+    }
+    .home-info
+    {
+        font-size:25px ;
+    }
+    .home-describiton
+    {
+        font-size: 15px;
+    }
+}
+
+
+/*
+================================
+        work styles 
+================================
+*/
+.work
+{
+    height: auto;
+    padding: 50px 0px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.work-title
+{
+    font-size: 60px;
+}
+
+.my-span
+{
+    font-weight: normal;
+}
+
+.part
+{
+    margin-top: 20px;
+    width: 30%;
+    float: left;
+    height: auto;
+    padding: 80px 0px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left:3%;
+}
+
+.icon-part
+{
+    color: #888;
+    margin-bottom:20px;
+}
+
+.parnt-title
+{
+    font-size: 25px;
+    color: orangered;
+}
+
+.line
+{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px; 
+    margin-top: 20px;  
+}
+
+.part-dec
+{
+    font-size: 17px;
+    color: #888;
+    padding: 20px;
+}
+
+@media (max-width:768px)
+{
+    .part
+    {
+        width: 80%;
+        
+    }
+
+    .work
+    {
+        margin-left: 20%;
+    }
+}
+
+
+/*
+================================
+        portfolio styles 
+================================
+*/
+
+.portoflio
+{
+background-color:#f8f8f8;
+padding-top: 20px;
+overflow: hidden;
+}
+
+.portoflio-title
+{
+    text-align: center;
+    font-size: 35px;
+}
+
+.portfolio-list
+{
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio-item
+{
+    display:inline-block;
+    margin:20px 0px;
+    width: 100px;
+    padding: 10px;
+}
+
+.portfolio-item.active
+{
+    background-color: orangered;
+    color: wheat;
+}
+
+.box-img div
+{
+    width: 25%;
+    float: left;
+    font-size: 0;
+    position: relative;
+}
+
+.box-img div img
+{
+    width: 100%;
+}
+
+.box-img .over-lay
+{
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(235,84, 36,0.5);
+    /* color: #fff; */
+    opacity: 0;
+}
+
+.box-img .over-lay span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    background-color: #fff;
+    display:block ;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid orangered;
+}
+
+
+
+@media (max-width:575px)
+{
+    .box-img div
+    {
+        width: 100%;
+    }
+    .portfolio-item
+    {
+        display: block;
+        margin: auto;
+    }
+    
+
+}
+
+@media (min-width:575px) and (max-width:768px)
+{
+    .box-img div
+    {
+        width: 50%;
+    }
+}
+
+
+/*
+================================
+        profile-skills styles 
+================================
+*/
+
+.profile-skills
+{
+    padding: 50px 0px;
+    overflow: hidden;
+}
+
+.profile
+{
+    width:50%;
+    float: left;
+}
+
+.skills
+{
+    width:50%;
+    float: left;
+}
+
+.profile-title
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.profile-title span
+{
+    font-weight: normal;
+}
+
+.profile-list
+{
+    list-style: none;
+}
+
+.profile-item
+{
+    margin-bottom: 10px;
+    
+}
+
+.profile-item span
+{
+    display:inline-block;
+    width: 100px;
+    font-weight: bold;
+    color: gray;
+}
+
+span.web
+{
+    font-weight: normal;
+    color: orangered;
+}
+
+.skills-dec
+{
+    font-size: 15;
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.bar
+{
+    /* background-color: green; */
+    margin-bottom: 12px;
+    overflow: hidden;
+    padding: 10px 0px ;
+}
+
+.title
+{
+    float: left;
+}
+
+.persantig
+{
+    float: right;
+    margin-right: 100px;
+}
+
+.parent
+{
+    height: 2px;
+    background-color: #f8f8f8;
+    clear: both;
+    position: relative;
+    top: 5px;
+}
+
+.span-parent1
+{
+    display: block;
+    position: absolute;
+    background-color: #eb5424;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+}
+
+.span-parent2
+{
+    display: block;
+    position: absolute;
+    background-color: #eb5424;
+    width: 90%;
+    height:100%;
+    top: 0;
+    left: 0;
+}
+
+.span-parent3 
+{
+    display: block;
+    position: absolute;
+    background-color: #eb5424;
+    width: 80%;
+    height:100%;
+    top: 0;
+    left: 0;
+}
+@media(max-width:768px)
+{
+    .profile
+            {
+                width:100%;
+                float: none;
+                /* display: block; */
+                margin-bottom: 30px;
+            }
+
+    .skills
+            {
+                width:100%;
+                float: none;
+                /* display: block; */
+            }
+}
+
+
+
+/*
+================================
+        creative-skills styles 
+================================
+*/
+
+.creative
+{
+    height: 500px;
+    background-image: url(../images/creative/about-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.creative-info
+{
+    padding-top: 100px;
+    width: 50%;
+    float: right;
+}
+
+.info-title
+{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.info-dir
+{
+    font-size: 40px;
+    color: #eb5424;
+    margin-bottom: 20px;
+}
+
+.info-desc
+{
+    color:black;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+@media(max-width:991px)
+{
+
+    .creative
+            {
+                height:auto;
+            }
+    .creative-info
+            {
+                width: 100%;
+                float: none;
+                padding-top:10px ;
+            }
+    .info-dir
+            {
+                font-size: 30px;
+            }       
+}
+
+
+/*
+================================
+        social-media styles 
+================================
+*/
+.social-media
+{
+    margin-top: 50px;
+    height: auto;
+    overflow: hidden;
+}
+
+.social-face , .social-twitter , .social-pian
+{
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 100px 0px 100px 60px;
+}
+
+.social-face
+{
+    background-color:#3b5998 ;
+}
+
+.social-twitter
+{
+    background-color: #498cbf;
+}
+
+.social-pian
+{
+    background-color: #cc2127;
+}
+
+.icon
+{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    margin-right: 10px;
+    color: gray;
+}
+
+.p-social
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.infoo1 , .infoo2
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media(max-width:991px)
+{
+    .social-face , .social-twitter , .social-pian
+        {
+            width: 100%;
+            float: none;
+        }
+}
+
+
+/*
+================================
+        drop styles 
+================================
+*/
+.drop
+{
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.drop .drop-title
+{
+    font-size:60px ;
+    margin-bottom: 30px;
+}
+
+.drop form
+{
+    width: 70%;
+    margin: auto;
+}
+
+.drop .form-input
+{
+    box-sizing: border-box;
+    padding: 5px; 
+}
+
+.drop form  .form-input input
+{
+    width: 49%;
+}
+
+.drop form  .form-input
+{
+    overflow: hidden;
+}
+
+.drop form  .form-input input[type=text]
+{
+    float: left;
+}
+
+.drop form  .form-input input[type=email]
+{
+    float: right;
+}
+
+.sub
+{
+    
+    width:98%;
+}
+
+.drop form textarea
+{
+    width: 98%;
+    margin-top: 5px;
+    background-color: #ccc;
+}
+
+.submit
+{
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid #ccc ;
+    cursor: pointer;
+}
+
+
+
+@media(max-width:768px)
+{
+    .drop
+    {
+        padding: 50px 0px;
+        text-align: center;
+    }
+    
+    .drop .drop-title
+    {
+        font-size:60px ;
+        margin-bottom: 30px;
+    }
+    
+    .drop form
+    {
+        width: 70%;
+        margin: auto;
+    }
+    
+    .drop .form-input
+    {
+        box-sizing: border-box;
+        padding: 5px; 
+    }
+    
+    .drop form  .form-input input
+    {
+        width: 48%;
+    }
+    
+    .drop form  .form-input
+    {
+        overflow: hidden;
+    }
+    
+    .drop form  .form-input input[type=text]
+    {
+        float: left;
+    }
+    
+    .drop form  .form-input input[type=email]
+    {
+        float: right;
+    }
+    
+    .sub
+    {
+        
+        width: 96%;
+    }
+    
+    .drop form textarea
+    {
+        width: 96%;
+        margin-top: 5px;
+        background-color: #ccc;
+    }
+    
+    .drop form input [type=submit]
+    {
+        width: 60%;
+        background-color: #fff;
+        border: 1px solid #ccc ;
+        cursor: pointer;
+    }
+
+
+}
